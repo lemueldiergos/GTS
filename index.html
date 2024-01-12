@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G O A L S</title>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+</head>
+
+<body>
+
+<div class="boxing" id="dialog-box-1">
+    <div class="box-me" id="dialog-box-2">
+        <div>
+            <h2>Oops... Please type the password.</h2>
+            <p>"Hint: Bread and Jam"</p>
+        </div>
+        <div>
+            <input id="input_ID" type="password" required/>
+            <input id="input_ID_SUBMIT" type="submit" value="OK?"/>
+            <input id="input_ID_SUBMIT1" type="submit" value="NO!"/>
+        </div>
+    </div>
+</div>
+
+<center class="container">
+    <h1 class="title-header">PERSONAL GOALS TRACKER<h3></h3></h1>
+
+<div class="main-in">
+    <div class="ani_loader">
+        <div class="con-child"><img id="me" src="assets/homework-research.gif"/></div>
+        <div class="con-child">
+            <div class="load-border">
+                <div class="load_dat2">87%</div>
+            </div>
+        </div>
+        <div class="con-child"><img id="goal" src="assets/mochi-graduation.gif"></div>
+        <p>Focus on my studies, graduate from college, and obtain a professional license.</p>
+    </div>
+
+
+    <div class="ani_loader">
+        <p>Improve my skills and aim to turn them into a profession in the future.</p>
+        <div class="con-child"><img id="me" src="assets/coding-freak.gif"/></div>
+        <div class="con-child">
+            <div class="load-border">
+                <div class="load_dat3">40%</div>
+            </div>
+        </div>
+        <div class="con-child"><img id="goal" src="assets/proffession.gif"></div>
+    </div>
+
+
+    <div class="ani_loader">
+        
+        <div class="con-child"><img id="me" src="assets/piske-usagi.gif"/></div>
+        <div class="con-child">
+            <div class="load-border">
+                <div class="load_dat1">10%</div>
+            </div>
+        </div>
+        <div class="con-child"><img id="goal" src="assets/Wikimania2023_Animated_Sticker_Camera.gif"></div>
+        <p>Make money online and purchase things I want.</p>
+    </div>
+
+   
+</div>
+
+<div class="for-see-more">
+    <div class="ani_loader">
+        <div class="con-child"><img id="me" src="assets/single2.gif"/></div>
+        <div class="con-child">
+            <div class="load-border">
+                <div class="load_dat4">1%</div>
+            </div>
+        </div>
+        <div class="con-child"><img id="goal" src="assets/final.gif"></div>
+    </div>
+</div>
+
+<div class="trig-btn" id="btn-to-see">
+    <h2>
+        See More<br>
+        <img src="assets/arrow.gif" id="arrow"/>
+    </h2>
+</div>
+</center> 
+
+<footer>
+    Handicraft by Lemuel E. Diergos 2024
+</footer>
+
+<script>
+var btn_see_more = document.getElementById("btn-to-see");
+var diaBox       = document.getElementById("dialog-box-1");
+var chiBox       = document.getElementById("dialog-box-2");
+var BOX_CANCEL   = document.getElementById("input_ID_SUBMIT1");
+
+btn_see_more.addEventListener("click", function() {
+
+    with(diaBox.style) {
+        opacity = "100%";
+        marginTop  = "0";
+    }
+
+
+    chiBox.style.margin = 0;
+});
+
+input_ID_SUBMIT1.addEventListener("click", function() {
+    with(diaBox.style) {
+        opacity = "0";
+        marginTop  = "-1000px";
+    }
+
+
+    chiBox.style.marginTop = "-1000px";
+});
+
+</script>
+</body>
+</html>
